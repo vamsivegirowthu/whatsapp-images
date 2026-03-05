@@ -24,15 +24,15 @@ phone_numbers = [
     "+918501830360"
 ]
 
-# Schedule time (11:40 PM = 23:40)
-schedule_time = "23:40"
+# Schedule time (11:50 PM = 23:50)
+schedule_time = "23:50"
 
 print("Waiting for scheduled time...")
 
 while True:
     current_time = datetime.now().strftime("%H:%M")
 
-    if current_time == schedule_time:
+    if current_time >= schedule_time:
 
         for phone in phone_numbers:
             message = client.messages.create(
