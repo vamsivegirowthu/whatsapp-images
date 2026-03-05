@@ -25,7 +25,7 @@ phone_numbers = [
 ]
 
 # Schedule time (5:43 PM = 17:43)
-schedule_time = "23:25"
+schedule_time = "23:30"
 
 print("Waiting for scheduled time...")
 
