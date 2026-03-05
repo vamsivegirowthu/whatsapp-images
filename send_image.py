@@ -51,12 +51,3 @@ while True:
 
     
 
-
-
-
-
-    
-
-
- #account_sid = "AC957e53546b73590ff8db2a02087bb9c1"
-#auth_token = "fa6f5b80429ccab5064237bb402cfb0f"
