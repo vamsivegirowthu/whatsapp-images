@@ -1,4 +1,6 @@
 import os
+import time
+from datetime import datetime
 from twilio.rest import Client
 
 account_sid = os.getenv("TWILIO_ACCOUNT_SID")
@@ -14,8 +16,7 @@ images = {
 }
 
 # Select image
-choice = input("Select image (1 / 2 / 3): ")
-image_url = images[choice]
+image_url = images["1"]
 
 # Multiple phone numbers
 phone_numbers = [
@@ -24,7 +25,7 @@ phone_numbers = [
 ]
 
 # Schedule time (5:43 PM = 17:43)
-schedule_time = "17:43"
+schedule_time = "23:25"
 
 print("Waiting for scheduled time...")
 
