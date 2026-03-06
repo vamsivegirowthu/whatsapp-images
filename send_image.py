@@ -25,9 +25,9 @@ phone_numbers = [
     "+918501830360"
 ]
 
-# Schedule time → 12:00 AM
-schedule_hour = 0
-schedule_minute = 0
+# Schedule time → 10:20 AM
+schedule_hour = 10
+schedule_minute = 20
 
 sent_today = False
 
@@ -39,7 +39,7 @@ while True:
 
     print("Current time:", now.strftime("%H:%M:%S"))
 
-    # Send message at 12:00 AM
+    # Send message at 10:20 AM
     if now.hour == schedule_hour and now.minute == schedule_minute and not sent_today:
 
         print("Sending WhatsApp messages...")
