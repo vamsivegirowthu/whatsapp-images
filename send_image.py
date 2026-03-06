@@ -25,9 +25,9 @@ phone_numbers = [
     "+918501830360"
 ]
 
-# Schedule time → 10:20 AM
-schedule_hour = 4
-schedule_minute = 50
+# Schedule time → 10:40 AM
+schedule_hour = 10
+schedule_minute = 40
 
 sent_today = False
 
