@@ -21,7 +21,7 @@ images = {
 }
 
 # Select image
-image_url = images["1"]
+image_url = images["3"]
 
 # Phone numbers
 phone_numbers = [
