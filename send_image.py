@@ -26,8 +26,8 @@ phone_numbers = [
 ]
 
 # Schedule time → 10:20 AM
-schedule_hour = 10
-schedule_minute = 20
+schedule_hour = 4
+schedule_minute = 50
 
 sent_today = False
 
