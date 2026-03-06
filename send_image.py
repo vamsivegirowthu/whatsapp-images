@@ -2,12 +2,16 @@ import os
 import time
 from datetime import datetime
 from twilio.rest import Client
+import pytz
 
 # Twilio credentials from Railway variables
 account_sid = os.getenv("TWILIO_ACCOUNT_SID")
 auth_token = os.getenv("TWILIO_AUTH_TOKEN")
 
 client = Client(account_sid, auth_token)
+
+# India timezone
+india = pytz.timezone("Asia/Kolkata")
 
 # Image URLs
 images = {
@@ -35,11 +39,11 @@ print("Scheduler started...")
 
 while True:
 
-    now = datetime.now()
+    now = datetime.now(india)
 
     print("Current time:", now.strftime("%H:%M:%S"))
 
-    # Send message at 10:20 AM
+    # Send message at 10:40 AM
     if now.hour == schedule_hour and now.minute == schedule_minute and not sent_today:
 
         print("Sending WhatsApp messages...")
